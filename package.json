@@ -1,0 +1,18 @@
+{
+  "name": "marketing-brand-colors",
+  "version": "1.0.0",
+  "description": "Color palettes for brand foundations",
+  "main": "index.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch index.scss index.css"
+  },
+  "keywords": [
+    "sass-colors"
+  ],
+  "author": "Yikai Zhang",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
+}

@@ -1,0 +1,61 @@
+// Default values
+$default-type: "10" !default;
+
+// Brand colors
+$shopify-green: #95bf47;
+$lime: #d0f224;
+$pistachio: #a5e3b9;
+$aloe: #4bfe85;
+$avocado: #0f9c1d;
+$jalapeno: #008060;
+$kale: #054a49;
+
+// Expressive colors
+$currant: #1238bf;
+$agave: #79dfff;
+$lavender: #cec9f8;
+$mandarin: #ed6c31;
+$dragon-fruit: #ed6bf8;
+$banana: #fcf3b0;
+
+// Functional colors
+$black: #000000;
+$dark-gray: #3d3f40;
+$middle-gray: #8d9091;
+$light-gray: #cccccc;
+$off-white: #f4f4f4;
+$white: #ffffff;
+$error: #ef523d;
+$warning: #f0d504;
+$success: #419969;
+
+// Color Maps
+$blue: (
+  10: #c5d1ff,
+  30: #7d90e8,
+  50: #405edd,
+  70: #1238bf,
+  90: #11215f,
+);
+
+// All colors
+$colors: (
+  blue: $blue,
+);
+
+// Color function
+@function get-color($color, $type: $default-type) {
+  @if map-has-key($map: $colors, $key: $color) {
+    $current-color: map-get(
+      $map: $colors,
+      $key: $color,
+    );
+
+    @if map-has-key($map: $current-color, $key: $type) {
+      @return map-get($map: $current-color, $key: $type);
+    }
+  }
+
+  @warn "Unknown `#{$color}` - `#{$type}` in $colors.";
+  @return null;
+}
