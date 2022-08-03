@@ -1,7 +1,7 @@
 {
-  "name": "@yikai-shopify/marketing-brand-colors",
+  "name": "marketing-brand-colors",
   "version": "1.0.0",
-  "description": "Color palettes for brand foundations",
+  "description": "Shopify marketing colors.",
   "main": "index.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

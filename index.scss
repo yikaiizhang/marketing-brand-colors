@@ -1,5 +1,5 @@
 // Default values
-$default-type: "10" !default;
+$default-type: 10 !default;
 
 // Brand colors
 $shopify-green: #95bf47;
@@ -29,8 +29,64 @@ $error: #ef523d;
 $warning: #f0d504;
 $success: #419969;
 
-// Color Maps
-$blue: (
+// Expanded color palette
+$shopify-green-palette: (
+  10: #e5fbba,
+  30: #bcdf7b,
+  50: #95bf47,
+  70: #638622,
+  90: #374d0f,
+);
+
+$lime-palette: (
+  10: #eefab3,
+  30: #d0f224,
+  50: #b0d00a,
+  70: #799102,
+  90: #4d5d01,
+);
+
+$pistachio-palette: (
+  10: #d4f9e0,
+  30: #a5e3b9,
+  50: #419969,
+  70: #196a49,
+  90: #0a4d3b,
+);
+
+$aloe-palette: (
+  10: #c1fbd4,
+  30: #4bfe85,
+  50: #22c357,
+  70: #15883b,
+  90: #0f4d24,
+);
+
+$avocado-palette: (
+  10: #d5f2d8,
+  30: #5bc766,
+  50: #0f9c1d,
+  70: #15751e,
+  90: #1f4d23,
+);
+
+$jalapeno-palette: (
+  10: #ccfff2,
+  30: #5fd5b6,
+  50: #1caa86,
+  70: #008060,
+  90: #074a38,
+);
+
+$kale-palette: (
+  10: #c7edec,
+  30: #84c6c5,
+  50: #479d9c,
+  70: #1e7372,
+  90: #054a49,
+);
+
+$currant-palette: (
   10: #c5d1ff,
   30: #7d90e8,
   50: #405edd,
@@ -38,9 +94,61 @@ $blue: (
   90: #11215f,
 );
 
+$agave-palette: (
+  10: #c6f0fc,
+  30: #79dfff,
+  50: #299fc4,
+  70: #096a88,
+  90: #003b4d,
+);
+
+$lavender-palette: (
+  10: #cec9f8,
+  30: #978de7,
+  50: #6052da,
+  70: #3525c1,
+  90: #1f1386,
+);
+
+$mandarin-palette: (
+  10: #fcdecf,
+  30: #f6a179,
+  50: #ed6c31,
+  70: #9f4a22,
+  90: #4d3226,
+);
+
+$dragon-fruit-palette: (
+  10: #fbccff,
+  30: #ed6bf8,
+  50: #b326bf,
+  70: #7c0b86,
+  90: #46034d,
+);
+
+$banana-palette: (
+  10: #fcf3b0,
+  30: #f9e96e,
+  50: #f0d504,
+  70: #bfa900,
+  90: #877701,
+);
+
 // All colors
 $colors: (
-  blue: $blue,
+  shopify-green-palette: $shopify-green-palette,
+  lime-palette: $lime-palette,
+  pistachio-palette: $pistachio-palette,
+  aloe-palette: $aloe-palette,
+  avocado-palette: $avocado-palette,
+  jalapeno-palette: $jalapeno-palette,
+  kale-palette: $kale-palette,
+  currant-palette: $currant-palette,
+  agave-palette: $agave-palette,
+  lavender-palette: $lavender-palette,
+  mandarin-palette: $mandarin-palette,
+  dragon-fruit-palette: $dragon-fruit-palette,
+  banana-palette: $banana-palette,
 );
 
 // Color function
